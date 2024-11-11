@@ -24,3 +24,53 @@ Before running the solutions, ensure that you have the required dependencies ins
 
 ```bash
 pip install -r requirements.txt
+
+
+
+
+Running the Solutions Locally
+Option 1: Running with Docker
+Build the Docker image using the command:
+
+bash
+Copy code
+docker build -t face-detection-recognition .
+Run the Docker container:
+
+bash
+Copy code
+docker run -it --rm face-detection-recognition
+Option 2: Running Without Docker
+Install the required dependencies by running:
+
+bash
+Copy code
+pip install -r requirements.txt
+Run each solution separately:
+
+For MTCNN + Inception ResNet:
+bash
+Copy code
+python Solution1.py
+For DeepFace:
+bash
+Copy code
+python Solution2.py
+For Custom CNN:
+bash
+Copy code
+python Solution3.py
+Testing All Methods Together
+To test all three methods in one go, you can use the Jupyter Notebook Wobot Assignment.ipynb. This notebook will execute all three face recognition methods and display the results.
+
+Launch the Jupyter Notebook:
+
+bash
+Copy code
+jupyter notebook Wobot Assignment.ipynb
+Follow the instructions in the notebook to run and compare the results.
+
+Conclusion
+Best Method for Real-Time Use: MTCNN + Inception ResNet
+Best Method for Simplicity: DeepFace
+Best for Customization: Custom CNN model (if labeled data is available)
