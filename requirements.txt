@@ -1,0 +1,11 @@
+# Core libraries
+opencv-python-headless>=4.5.3.56
+torch>=1.9.0
+torchvision>=0.10.0
+numpy>=1.21.0
+matplotlib>=3.4.2
+facenet-pytorch>=2.5.2
+deepface>=0.0.69
+# Additional dependencies for compatibility
+Pillow>=8.2.0  # for image handling
+scikit-learn>=0.24.2  # for clustering
